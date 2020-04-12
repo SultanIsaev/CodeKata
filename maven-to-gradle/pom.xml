@@ -57,6 +57,22 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>edu.plugin</groupId>
+                <artifactId>todo-searcher</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <configuration>
+                            <greeting>Hello, I will search TODO's in project! :)</greeting>
+                        </configuration>
+                        <goals>
+                            <goal>search</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
